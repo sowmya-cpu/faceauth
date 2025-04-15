@@ -129,8 +129,8 @@ $(document).ready(function() {
     navigator.geolocation.getCurrentPosition(function(position) {
       var lat = position.coords.latitude;
       var lon = position.coords.longitude;
-      console.log(lat)
-      console.log(lon)
+      alert("Your lattitude is: " + lat)
+      alert("Your longitude is: " + lon)
       
       var formData = new FormData();
       formData.append('username', username);
